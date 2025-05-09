@@ -1,23 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News homepage</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <title>Frontend Mentor | News homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="Nav">
-        <div class="left">
-            <img src="./assets/logo.svg" alt=" logo">
+    <div class="container">
+        <div class="navbar">
+            <div class="image">
+                <img src="assets/logo.svg" alt="logo">
+            </div>
+            <div class=" menu">
+                    <a href="#">Home</a>
+                    <a href="#">New</a>
+                    <a href="#">Popular</a>
+                    <a href="#">Trending</a>
+                    <a href="#">Categories</a>
+            </div>
+        </div>
+        <div class="hero">
+            <img class="hero-image" src="assets/image-web-3-desktop.jpg" alt="">
+            <div class="hero-article">
+                <p class="hero-title">The Bright Future of Web 3.0?</p>
+                <div class="hero-description">
+                    <p class="hero-subtitle">We dive into the next evolution of the web that claims to put the power of
+                        the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+                    <button class="hero-button" type="button">Read More</button>
+                </div>
+            </div>
         </div>
         <div class="right">
-            <ul>
-                <li>Home</li>
-                <li>New</li>
-                <li>Popular</li>
-                <li>Trending</li>
-                <li>Categories</li>
-            </ul>
+            <p class="right-headline">New</p>
+            <article class="right-article">
+                <p class="right">Hydrogen VS Electric Cars</p>
+                <p class="right-text">Will hydrogen-fueled cars ever catch up to EVs?</p>
+                <hr>
+            </article>
+            <article class="right-article">
+                <p class="right-title">The Downsides of AI Artistry</p>
+                <p class="right-text">What are possible adverse effects of on-demand AI image generation?</p>
+                <hr>
+            </article>
+           
+            <article class="right-article">
+                <p class="right-title">Is VC Funding Drying Up</p>
+                <p class="right-text">Private funding by VC firms is down 50% YOY. We take a look at what means.</p>
+            </article>
+
+        </div>
+        <div class="articles">
+            <article class="article-card">
+                <img class="article-image" src="assets/image-retro-pcs.jpg" alt="Retro-PCs"/>
+                <section class="article-content">
+                    <div class="article-number">01</div>
+                    <div class="article-title">Reviving Retro PCs</div>
+                    <div class="article-description">What happens when old PCs are given mordern upgrades?</div>
+                </section>
+            </article>
+            <article class="article-card">
+                <img class="article-image" src="assets/image-top-laptops.jpg" alt="Top-10-Laptops"/>
+                <section class="article-content">
+                    <div class="article-number">02</div>
+                    <div class="article-title">Top 10 Laptops of 2022</div>
+                    <div class="article-description">Our best picks for various needs and budgets.</div>
+                </section>
+            </article>
+            <article class="article-card">
+                <img class="article-image" src="assets/image-gaming-growth.jpg" alt="Growth-of-Gaming"/>
+                <section class="article-content">
+                    <div class="article-number">03</div>
+                    <div class="article-title">The Growth of Gaming</div>
+                    <div class="article-description">How the pandemic has sparked fresh opportunities.</div>
+                </section>
+            </article>
         </div>
     </div>
 </body>
